@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-image: url("resources/cover.jpg");
+    height: 34rem;
+    width:35rem;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    padding:5px 10px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+button:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* responsive */
+
+/* 
+@media (max-width:1400px){
+    .main{
+        height: 35rem;
+        width: 35rem;
+    }
+    .btn button{
+        font-size: 3rem;
+    }
+} */
+
+@media (max-width:560px){
+    .main{
+        height: 30rem;
+        width: 30rem;
+    }
+    .btn button{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width:490px){
+    .main{
+        height: 28rem;
+        width: 28rem;
+    }
+    .btn button{
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width:410px){
+    .main {
+        height: 24rem;
+        width: 24rem;
+    }
+    .btn button{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+}

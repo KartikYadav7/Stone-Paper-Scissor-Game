@@ -1,4 +1,3 @@
-
 const images=document.querySelectorAll('.no-click');
 const stone=document.querySelector('#stone');
 const paper=document.querySelector('#paper');
@@ -34,6 +33,8 @@ stone.addEventListener('click', handleClickStone);
 paper.addEventListener('click', handleClickPaper);
 scissor.addEventListener('click', handleClickScissor);
 
+p2.textContent=`computer:${computerScore}`;
+p.textContent=`User:${userScore}`;
 
 function compute(user){
     let computer = Math.floor(Math.random() * 3+ 1);
